@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="scroll-smooth">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>سوف ويب | حلول برمجية متطورة</title>
+    <base href="/SoftWeb/" />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&family=Tajawal:wght@400;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1e293b",
+                        "secondary": "#34d399",
+                        "background": "#f1f5f9"
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="css/app.css" rel="stylesheet" />
+    <link href="SoftWeb.styles.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div id="app">
+        <div class="flex flex-col items-center justify-center h-screen bg-primary">
+            <div class="relative w-24 h-24">
+                <div class="absolute inset-0 border-4 border-secondary/20 rounded-full"></div>
+                <div class="absolute inset-0 border-4 border-secondary rounded-full border-t-transparent animate-spin"></div>
+            </div>
+
+            <div class="mt-8 text-center">
+                <h2 class="text-white font-['Cairo'] font-bold text-2xl tracking-wider">
+                    سوف <span class="text-secondary">ويب</span>
+                </h2>
+                <p class="text-slate-400 font-['Tajawal'] mt-2 animate-pulse">جاري تحضير الحلول البرمجية...</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="blazor-error-ui" class="hidden fixed bottom-0 w-full z-[1000] bg-yellow-100 p-2 text-center shadow-lg">
+        حدث خطأ غير متوقع.
+        <a href="" class="reload font-bold underline px-2">إعادة تحميل</a>
+        <a class="dismiss px-2 cursor-pointer">🗙</a>
+    </div>
+
+    <script src="_framework/blazor.webassembly.js"></script>
+</body>
+
+</html>
