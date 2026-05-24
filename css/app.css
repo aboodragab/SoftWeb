@@ -1,0 +1,55 @@
+﻿:root {
+    --primary-dark: #0d1117; /* لون الخلفية الداكن */
+    --accent-teal: #1ed7b9; /* اللون الفيروزي للأزرار */
+    --text-gray: #8b949e;
+}
+
+body {
+    font-family: 'Tajawal', sans-serif; /* تأكد من إضافة الخط في index.html */
+    background-color: #ffffff;
+    direction: rtl; /* للغة العربية */
+}
+
+.hero-section {
+    background-color: var(--primary-dark);
+    color: white;
+    padding: 100px 0;
+    border-bottom-left-radius: 60px;
+}
+
+.btn-softweb {
+    background-color: var(--accent-teal);
+    color: var(--primary-dark);
+    font-weight: bold;
+    border-radius: 12px;
+    padding: 12px 35px;
+    transition: 0.3s;
+}
+
+    .btn-softweb:hover {
+        background-color: #17b39a;
+        transform: scale(1.05);
+    }
+
+.service-card {
+    border-radius: 25px;
+    background: #f8f9fa;
+    border: none;
+    transition: 0.3s;
+}
+
+    .service-card:hover {
+        box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    }
+html, body {
+    scroll-behavior: smooth !important;
+}
+select {
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    appearance: none !important;
+    background-image: none !important
+}
+    select::-ms-expand {
+        display: none !important;
+    }
